@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style type="text/css">
+.body{
+  width:1140px;
+  
+  margin-left:30px;
+  margin-right: 200px;
+}
+        .container{
+        margin:10px 150px;
+}
+.display_screen{
+  width:800px;
+  height: 60px;
+  border:2px solid #000;
+  font-size: 30px;
+  padding:5% 0 5% 5%;
+ 
+  text-align: center;
+   
+  margin: 30px 100px 20px -20px;
+
+}
+.clear{
+  clear:left;
+}
+.center{
+  font-size: 20px;
+  padding:2px;
+}
+.center1{
+  font-size: 20px;
+  padding:2px;
+  margin-left: 10PX;
+}
+.button{
+
+float: left;
+width:38px;
+height:30px;
+border:2px solid #000;
+margin:20px 20px 0 40px;
+margin-left:5px;
+}
+
+.black{background-color:black;
+        color:white;
+        text-align:center;
+}
+.margin_left{
+  margin-left:70px;
+
+}
+.margin_left1{
+  margin-left:110px;
+
+}
+.space{
+  width: 400px;
+  margin-left: 200px;
+}
+.space1{
+  width: 80px;
+  background-color: aliceblue;
+  color: black;
+  
+}
+.green{
+  color:green;
+}
+.white{
+      color:beige;
+}
+.delete_button{
+      width:50px;
+}
+
+  </style>
+  <title>Type Writer</title>
+</head>
+<body class="body">
+  <div class="container">
+    <p input type="text" id="screen" class="display_screen">masaischool.com</p>
+    <div onclick="display_1()" id="press_1" class="clear button black center">1</div>
+
+    <div onclick="display_2()" id="press_2" class="button black center">2</div>
+     <div onclick="display_3()" id="press_3" class="button black center">3</div>
+     <div onclick="display_4()" id="press_4" class="button black center">4</div>
+     <div onclick="display_5()" id="press_5" class="button black center">5</div>
+     <div onclick="display_6()" id="press_6" class="button black center">6</div>
+     <div onclick="display_7()" id="press_7" class="button black center">7</div>
+     <div onclick="display_8()" id="press_8" class="button black center">8</div>
+     
+     <div onclick="display_9()" id="press_9" class="button black center">9</div>
+     <div onclick="display_0()" id="press_0" class="button black center">0</div>
+     <div onclick="dispaly_back()" id="press_back" class="button black center delete_button">DEL</div>
+    
+     
+    <div onclick="display_A()" id="press_A" class="clear button black center margin_left">A</div>
+
+   <div onclick="display_B()" id="press_B" class="button black center ">B</div>
+    <div onclick="display_C()" id="press_C" class="button black center">C</div>
+    <div onclick="display_D()" id="press_D" class="button black center">D</div>
+    <div onclick="display_E()" id="press_e" class="button black center">E</div>
+    <div onclick="display_F()" id="press_F" class="button black center">F</div>
+    <div onclick="display_G()" id="press-G" class="button black center">G</div>
+    <div onclick="display_H()" id="press-H" class="button black center">H</div>
+    
+    <div onclick="display_I()" id="press_I" class="button black center">I</div>
+
+    <div onclick="display_J()" id="press_J" class="clear button black center margin_left">J</div>
+
+    <div onclick="display_K()" id="press_K" class="button black center">K</div>
+     <div onclick="display_L()" id="press_L" class="button black center">L</div>
+     <div onclick="display_M()" id="press_M" class="button black center">M</div>
+     <div onclick="display_N()" id="press_N" class="button black center">N</div>
+     <div onclick="display_O()" id="press_O" class="button black center">O</div>
+     <div onclick="display_P()" id="press_P" class="button black center">P</div>
+     <div onclick="display_Q()" id="press_Q" class="button black center">Q</div>
+     
+     <div onclick="display_R()" id="press_R" class="button black center">R</div>
+     <div onclick="display_S()" id="press_S" class="clear button black center margin_left">S</div>
+
+     <div onclick="display_T()" id="press_T" class="button black center">T</div>
+      <div onclick="display_U()" id="press_U" class="button black center">U</div>
+      <div onclick="display_V()" id="press_V" class="button black center">V</div>
+      <div onclick="display_W()" id="press_W" class="button black center">W</div>
+      <div onclick="display_X()" id="press_X" class="button black center">X</div>
+      <div onclick="display_Y()" id="press_Y" class="button black center">Y</div>
+      <div onclick="display_Z()" id="press_Z" class="button black center">Z</div>
+      
+      <div onclick="display_com()" id="press_com" class="button black center">.com</div>
+      <div onclick="display_space()" id="press_Space" class="clear button black center margin_left space"></div>
+      <div onclick="display()" id="press_Space1" class="clear button black center margin_left1 space1">CAPS</div>
+      <div onclick="display()" id="press_Space1" class="button black center space1 ">SHIFT</div>
+      <div onclick="display()" id="press_Space1" class="button black center space1">PASSWD</div>
+      <div onclick="display()" id="press_Space1" class="button black center space1">CLEAN</div>
+      <div onclick="display()" id="press_Space1" class="button black center space1">REV</div>
+  
+  <div onclick="display()" id="press_Space1" class="clear button black center margin_left1 space1 green">CAPS</div>
+      <div onclick="display()" id="press_Space1" class="button black center space1 green">SHIFT</div>
+      <div onclick="display()" id="press_Space1" class="button black center space1 green">PASSWD</div>
+      <div onclick="display()" id="press_Space1" class="button black center space1 green">CLEAN</div>
+      <div onclick="display()" id="press_Space1" class="button black center space1 green">REV</div>
+    </div>  
+<script>
+
+    function display_1(){
+          document.getElementById('screen').innerHTML+="1";
+    }
+    function display_2(){
+          document.getElementById('screen').innerHTML+="2";
+    }
+    function display_3(){
+          document.getElementById('screen').innerHTML+="3";
+    }
+    function display_4(){
+          document.getElementById('screen').innerHTML+="4";
+    }
+    function display_5(){
+          document.getElementById('screen').innerHTML+="5";
+    }
+    function display_6(){
+          document.getElementById('screen').innerHTML+="6";
+    }
+    function display_7(){
+          document.getElementById('screen').innerHTML+="7";
+    }
+    function display_8(){
+          document.getElementById('screen').innerHTML+="8";
+    }
+    function display_9(){
+          document.getElementById('screen').innerHTML+="9";
+    }
+    function display_0(){
+          document.getElementById('screen').innerHTML+="0";
+    }
+    function display_A(){
+          document.getElementById('screen').innerHTML+="A";
+    }
+    function display_B(){
+          document.getElementById('screen').innerHTML+="B";
+    }
+    function display_C(){
+          document.getElementById('screen').innerHTML+="C";
+    }
+    function display_D(){
+          document.getElementById('screen').innerHTML+="D";
+    }
+    function display_E(){
+          document.getElementById('screen').innerHTML+="E";
+    }
+    function display_F(){
+          document.getElementById('screen').innerHTML+="F";
+    }
+    function display_G(){
+          document.getElementById('screen').innerHTML+="G";
+    }
+    function display_H(){
+          document.getElementById('screen').innerHTML+="H";
+    }
+    function display_I(){
+          document.getElementById('screen').innerHTML+="I";
+    }
+    function display_J(){
+          document.getElementById('screen').innerHTML+="J";
+    }
+    function display_K(){
+          document.getElementById('screen').innerHTML+="K";
+    }
+    function display_L(){
+          document.getElementById('screen').innerHTML+="L";
+    }
+    function display_M(){
+          document.getElementById('screen').innerHTML+="M";
+    }
+    function display_N(){
+          document.getElementById('screen').innerHTML+="N";
+    }
+    function display_O(){
+          document.getElementById('screen').innerHTML+="O";
+    }
+    function display_P(){
+          document.getElementById('screen').innerHTML+="P";
+    }
+    function display_Q(){
+          document.getElementById('screen').innerHTML+="Q";
+    }
+    function display_R(){
+          document.getElementById('screen').innerHTML+="R";
+    }
+    function display_S(){
+          document.getElementById('screen').innerHTML+="S";
+    }
+    function display_T(){
+          document.getElementById('screen').innerHTML+="T";
+    }
+    function display_U(){
+          document.getElementById('screen').innerHTML+="U";
+    }
+    function display_V(){
+          document.getElementById('screen').innerHTML+="V";
+    }
+    function display_W(){
+          document.getElementById('screen').innerHTML+="W";
+    }
+    function display_X(){
+          document.getElementById('screen').innerHTML+="X";
+    }
+    function display_Y(){
+          document.getElementById('screen').innerHTML+="Y";
+    }
+    function display_Z(){
+          document.getElementById('screen').innerHTML+="Z";
+    }
+    function display_com(){
+          document.getElementById('screen').innerHTML+=".com";
+    }
+    function display_space(){
+          document.getElementById('screen').innerHTML+="  ";
+    }
+
+    
+
+    
+function type_writer(){
+var i;
+var add_txt = document.getElementById(screen).value;
+
+  if (i < add_txt.length) {
+    document.getElementById("screen").innerHTML += add_txt.charAt(i);
+    i++;
+    
+  }
+  
+}
+function dispaly_back(){
+        var i;
+        var del_txt = document.getElementById(screen).value;
+        if(i>=del_txt.length){
+            document.getElementById("screen").innerHTML = del_txt.charAt(i-1);
+            i--;     
+        }
+  }
+</script>
+
+
+
+</script>
+</body>
+</html>
