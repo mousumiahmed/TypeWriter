@@ -284,23 +284,31 @@ function dispaly_back(){
 
 
 
-  function display_clean(){
-    var display = document.getElementById("screen").value;
-    if(display == "shit" || display == "cocks" || display == "cunt" ){
-        var first_element = display[0];
-        var end_element = display[display.length -1];
-
-        for(var i = 0; i < display.length-i; i++ ){
+  function display_clean()
+  {
+    var display = document.getElementById("screen").innerHTML;
+    var element="";
+    
+    if(display == "shit" || display == "cocks" || display == "cunt" )
+    {
+      var first_element = display[0];
+      var end_element = display[display.length -1];
+      for(var i = 1; i < display.length-1; i++ )
+      {
             element += "*";
-            i++;
-        }
-        document.getElementById("press_clean").style.color = "green"; 
-        document.getElementById("screen").value = first_element + end_element;
-        
-    }else{
-        document.getElementById("press_clean").style.color = "black";
+            
+      }
+      document.getElementById("screen").innerHTML = first_element + element + end_element;
+      document.getElementById("press_clean").style.backgroundColor="green";
     }
-}
+    else
+    {
+      //document.getElementById("screen").value=display;
+      document.getElementById("press_clean").style.color = "black";
+    }
+  }
+  
+
 
 
 
