@@ -24,7 +24,6 @@
   text-align: center;
    
   margin: 30px 100px 20px -20px;
-
 }
 .clear{
   clear:left;
@@ -39,7 +38,6 @@
   margin-left: 10PX;
 }
 .button{
-
 float: left;
 width:38px;
 height:30px;
@@ -47,18 +45,15 @@ border:2px solid #000;
 margin:20px 20px 0 40px;
 margin-left:5px;
 }
-
 .black{background-color:black;
         color:white;
         text-align:center;
 }
 .margin_left{
   margin-left:70px;
-
 }
 .margin_left1{
   margin-left:110px;
-
 }
 .space{
   width: 400px;
@@ -79,13 +74,13 @@ margin-left:5px;
 .delete_button{
       width:50px;
 }
-
   </style>
   <title>Type Writer</title>
 </head>
 <body class="body">
   <div class="container">
     <p input type="text" id="screen" class="display_screen">masaischool.com</p>
+   <!--<input type="text" name="screen" value="masaischool.com" class="display_screen " id="screen" >-->
     <div onclick="display_1()" id="press_1" class="clear button black center">1</div>
 
     <div onclick="display_2()" id="press_2" class="button black center">2</div>
@@ -139,7 +134,7 @@ margin-left:5px;
       <div onclick="display()" id="press_Space1" class="clear button black center margin_left1 space1">CAPS</div>
       <div onclick="display()" id="press_Space1" class="button black center space1 ">SHIFT</div>
       <div onclick="display()" id="press_Space1" class="button black center space1">PASSWD</div>
-      <div onclick="display()" id="press_Space1" class="button black center space1">CLEAN</div>
+      <div onclick="display_clean()" id="press_clean" class="button black center space1">CLEAN</div>
       <div onclick="display()" id="press_Space1" class="button black center space1">REV</div>
   
   <div onclick="display()" id="press_Space1" class="clear button black center margin_left1 space1 green">CAPS</div>
@@ -149,7 +144,6 @@ margin-left:5px;
       <div onclick="display()" id="press_Space1" class="button black center space1 green">REV</div>
     </div>  
 <script>
-
     function display_1(){
           document.getElementById('screen').innerHTML+="1";
     }
@@ -181,82 +175,82 @@ margin-left:5px;
           document.getElementById('screen').innerHTML+="0";
     }
     function display_A(){
-          document.getElementById('screen').innerHTML+="A";
+          document.getElementById('screen').innerHTML+="a";
     }
     function display_B(){
-          document.getElementById('screen').innerHTML+="B";
+          document.getElementById('screen').innerHTML+="b";
     }
     function display_C(){
-          document.getElementById('screen').innerHTML+="C";
+          document.getElementById('screen').innerHTML+="c";
     }
     function display_D(){
-          document.getElementById('screen').innerHTML+="D";
+          document.getElementById('screen').innerHTML+="d";
     }
     function display_E(){
-          document.getElementById('screen').innerHTML+="E";
+          document.getElementById('screen').innerHTML+="e";
     }
     function display_F(){
-          document.getElementById('screen').innerHTML+="F";
+          document.getElementById('screen').innerHTML+="f";
     }
     function display_G(){
-          document.getElementById('screen').innerHTML+="G";
+          document.getElementById('screen').innerHTML+="g";
     }
     function display_H(){
-          document.getElementById('screen').innerHTML+="H";
+          document.getElementById('screen').innerHTML+="h";
     }
     function display_I(){
-          document.getElementById('screen').innerHTML+="I";
+          document.getElementById('screen').innerHTML+="i";
     }
     function display_J(){
-          document.getElementById('screen').innerHTML+="J";
+          document.getElementById('screen').innerHTML+="j";
     }
     function display_K(){
-          document.getElementById('screen').innerHTML+="K";
+          document.getElementById('screen').innerHTML+="k";
     }
     function display_L(){
-          document.getElementById('screen').innerHTML+="L";
+          document.getElementById('screen').innerHTML+="l";
     }
     function display_M(){
-          document.getElementById('screen').innerHTML+="M";
+          document.getElementById('screen').innerHTML+="m";
     }
     function display_N(){
-          document.getElementById('screen').innerHTML+="N";
+          document.getElementById('screen').innerHTML+="n";
     }
     function display_O(){
-          document.getElementById('screen').innerHTML+="O";
+          document.getElementById('screen').innerHTML+="o";
     }
     function display_P(){
-          document.getElementById('screen').innerHTML+="P";
+          document.getElementById('screen').innerHTML+="p";
     }
     function display_Q(){
-          document.getElementById('screen').innerHTML+="Q";
+          document.getElementById('screen').innerHTML+="q";
     }
     function display_R(){
-          document.getElementById('screen').innerHTML+="R";
+          document.getElementById('screen').innerHTML+="r";
     }
     function display_S(){
-          document.getElementById('screen').innerHTML+="S";
+          document.getElementById('screen').innerHTML+="s";
     }
     function display_T(){
-          document.getElementById('screen').innerHTML+="T";
+          document.getElementById('screen').innerHTML+="t";
     }
     function display_U(){
-          document.getElementById('screen').innerHTML+="U";
+          document.getElementById('screen').innerHTML+="u";
     }
     function display_V(){
-          document.getElementById('screen').innerHTML+="V";
+          document.getElementById('screen').innerHTML+="v";
     }
     function display_W(){
-          document.getElementById('screen').innerHTML+="W";
+          document.getElementById('screen').innerHTML+="w";
     }
     function display_X(){
-          document.getElementById('screen').innerHTML+="X";
+          document.getElementById('screen').innerHTML+="x";
     }
     function display_Y(){
-          document.getElementById('screen').innerHTML+="Y";
+          document.getElementById('screen').innerHTML+="y";
     }
     function display_Z(){
-          document.getElementById('screen').innerHTML+="Z";
+          document.getElementById('screen').innerHTML+="z";
     }
     function display_com(){
           document.getElementById('screen').innerHTML+=".com";
@@ -264,14 +258,11 @@ margin-left:5px;
     function display_space(){
           document.getElementById('screen').innerHTML+="  ";
     }
-
     
-
     
 function type_writer(){
 var i;
 var add_txt = document.getElementById(screen).value;
-
   if (i < add_txt.length) {
     document.getElementById("screen").innerHTML += add_txt.charAt(i);
     i++;
@@ -280,13 +271,40 @@ var add_txt = document.getElementById(screen).value;
   
 }
 function dispaly_back(){
-        var i;
+
+      document.getElementById("screen").innerHTML = "";
+
+       /* var i;
         var del_txt = document.getElementById(screen).value;
         if(i>=del_txt.length){
             document.getElementById("screen").innerHTML = del_txt.charAt(i-1);
             i--;     
-        }
+        }*/
   }
+
+
+
+  function display_clean(){
+    var display = document.getElementById("screen").value;
+    if(display == "shit" || display == "cocks" || display == "cunt" ){
+        var first_element = display[0];
+        var end_element = display[display.length -1];
+
+        for(var i = 0; i < display.length-i; i++ ){
+            element += "*";
+            i++;
+        }
+        document.getElementById("press_clean").style.color = "green"; 
+        document.getElementById("screen").value = first_element + end_element;
+        
+    }else{
+        document.getElementById("press_clean").style.color = "black";
+    }
+}
+
+
+
+
 </script>
 
 
